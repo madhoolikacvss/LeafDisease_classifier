@@ -8,3 +8,9 @@
 
 eg: 100 samples, batch0size = 20 ---> 100/20 = 5 iterations for 1 epoch 
 
+## Journal 
+06/24: 
+Making dataset
+- using glob instead of listdir to make a csv file with all images, and their lables 
+
+
