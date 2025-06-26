@@ -1,0 +1,16 @@
+# Notes
+
+## Terminology
+
+1. 1 Epoch: 1 forward and backward pass of all training samples 
+2. batch_size: number of training samples in one forward and backward pass 
+3. number of iterations = number of passes, each passusing [batch_size] number of samples 
+
+eg: 100 samples, batch0size = 20 ---> 100/20 = 5 iterations for 1 epoch 
+
+## Journal 
+06/24: 
+Making dataset
+- using glob instead of listdir to make a csv file with all images, and their lables 
+
+
