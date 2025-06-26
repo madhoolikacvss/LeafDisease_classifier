@@ -14,5 +14,10 @@ Making dataset
 - using glob instead of listdir to make a csv file with all images, and their lables 
 - Images are usually 640 x 480 in size, resizing them to 224 x 224 (suitable for resNet50 and other models)
 - using a normalization as per ImageNet standard
+- 221 healthy leaf images 
+- 3292 total unhealthy leaf images
+
+Showing images:
+When images not normalized
 
 
