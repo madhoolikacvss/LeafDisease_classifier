@@ -17,7 +17,14 @@ Making dataset
 - 221 healthy leaf images 
 - 3292 total unhealthy leaf images
 
-Showing images:
-When images not normalized
+Sample images:
+When images not normalized (pixel size kept to original):
+![image](https://github.com/user-attachments/assets/36773fa8-d8cc-4945-b743-781e71bd25fa)
+When images are resized to 224 x 224:
+![image](https://github.com/user-attachments/assets/7d6f051a-c7ea-4bd3-87c6-5cc2788f7467)
+
+When images are normalized (pixel size kept to original):
+![image](https://github.com/user-attachments/assets/3a28023a-9ad1-4e5f-9916-29ca70ccd2be)
+
 
 
