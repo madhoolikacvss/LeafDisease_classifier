@@ -9,8 +9,7 @@
 eg: 100 samples, batch0size = 20 ---> 100/20 = 5 iterations for 1 epoch 
 
 ## Journal 
-06/24: 
-Making dataset
+### Making dataset
 - using glob instead of listdir to make a csv file with all images, and their lables 
 - Images are usually 640 x 480 in size, resizing them to 224 x 224 (suitable for resNet50 and other models)
 - using a normalization as per ImageNet standard
@@ -25,6 +24,9 @@ When images are resized to 224 x 224:
 
 When images are normalized (pixel size kept to original):
 ![image](https://github.com/user-attachments/assets/3a28023a-9ad1-4e5f-9916-29ca70ccd2be)
+
+### Loss functions 
+Since there is a heavy class imbalance, I need to apply pos_weight in CrossEntropyLoss T____T
 
 
 
