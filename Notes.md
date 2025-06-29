@@ -15,6 +15,7 @@ eg: 100 samples, batch0size = 20 ---> 100/20 = 5 iterations for 1 epoch
 - using a normalization as per ImageNet standard
 - 221 healthy leaf images 
 - 3292 total unhealthy leaf images
+- In order to make the training and testing balances, I need to make sure that the distrubutions of images in each class are equal
 
 Sample images:
 When images not normalized (pixel size kept to original):
@@ -26,7 +27,11 @@ When images are normalized (pixel size kept to original):
 ![image](https://github.com/user-attachments/assets/3a28023a-9ad1-4e5f-9916-29ca70ccd2be)
 
 ### Loss functions 
-Since there is a heavy class imbalance, I need to apply pos_weight in CrossEntropyLoss T____T
+
+### To D0
+- Make distrubution even for class imbalance (look fro ways to modify dataset)
+- Since there is a heavy class imbalance, I need to apply pos_weight in CrossEntropyLoss? T____T
+
 
 
 
