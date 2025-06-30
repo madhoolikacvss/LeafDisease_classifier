@@ -38,9 +38,12 @@ When images are normalized (pixel size kept to original):
 3. MobileNetV2
 4. EfficientNetB0
 
+### versions
+- v1: Deals with classweight imbalance, adds transformations ot images for data augmentation
+- v2: After plotting and checking all results, I was not satisfied with f-1 scores of the models, hence v2 introduces k-fold cross validation and unfreezing backbone after a few epochs (adding onto v1)
 ### To D0
-- Complete data augmentations
-- change resnet50 loss function to weighted loss
+- Complete multi-class training
+- plotting for multi-class
 
 
 
