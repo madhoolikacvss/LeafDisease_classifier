@@ -17,6 +17,12 @@ eg: 100 samples, batch0size = 20 ---> 100/20 = 5 iterations for 1 epoch
 - 3292 total unhealthy leaf images
 - In order to make the training and testing balances, I need to make sure that the distrubutions of images in each class are equal
 
+- DATA AUGMENTAION: Due to the very small data size, I have decided to expand the dataset:
+    1. Random brighness: I decided to include this since colour and visibility are important to the model
+    2. Random shift
+    3. Random zoom(?)
+
+
 Sample images:
 When images not normalized (pixel size kept to original):
 ![image](https://github.com/user-attachments/assets/36773fa8-d8cc-4945-b743-781e71bd25fa)
@@ -26,11 +32,15 @@ When images are resized to 224 x 224:
 When images are normalized (pixel size kept to original):
 ![image](https://github.com/user-attachments/assets/3a28023a-9ad1-4e5f-9916-29ca70ccd2be)
 
-### Loss functions 
+### Models
+1. DenseNet121
+2. ResNet50
+3. MobileNetV2
+4. EfficientNetB0
 
 ### To D0
-- Make distrubution even for class imbalance (look fro ways to modify dataset)
-- Since there is a heavy class imbalance, I need to apply pos_weight in CrossEntropyLoss? T____T
+- Complete data augmentations
+- change resnet50 loss function to weighted loss
 
 
 
