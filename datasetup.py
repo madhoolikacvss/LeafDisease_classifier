@@ -34,33 +34,38 @@ with open('./lables.csv', 'w') as file:
     writer = csv.writer(file)
     writer.writerow(["directory", "image_name", "binary_cat", "multi_cat"])
     
-    categories = {
+    multi_categories = {
         "healthy": 0,
-        "unhealthy" : 1,
-        "Anthracnose" : 2,
-        "Bacterial Blight": 3,
-        "Black Spot": 4,
-        "Citrus Canker": 5, 
-        "Citrus Hindu Mite":6,
-        "Citrus Leafminer":7,
+        "Anthracnose" : 1,
+        "Bacterial Blight": 2,
+        "Black Spot": 3,
+        "Citrus Canker": 4, 
+        "Citrus Hindu Mite":5,
+        "Citrus Leafminer":6,
+        "Spider Mites":7, 
         "Curl Leaf":8,
         "Deficiency":9,
         "Dry Leaf":10,
         "Greening":11,
         "Melanose":12,
-        "Sooty Mould":13,
-        "Spider Mites":14 
+        "Sooty Mould":13        
     }
+
+    binary_categories = {
+        "healthy": 0,
+        "unhealthy" : 1,
+    }
+    
     
     for path, subdirs, files in os.walk('./dataset'):
         if "./dataset/healthy" in path:
             for img in files:
-                writer.writerow([os.path.join(path, img), img, categories["healthy"], categories["healthy"]])
+                writer.writerow([os.path.join(path, img), img, binary_categories["healthy"], multi_categories["healthy"]])
         if "./dataset/unhealthy" in path:
             for img in files:
                 # path[20:] cut out the unnecessary directory snince we only needthe diseasw name, which is the latter part of the directory
                 multi = path[20:]
-                writer.writerow([os.path.join(path, img), img, categories["unhealthy"], categories[multi]])
+                writer.writerow([os.path.join(path, img), img, binary_categories["unhealthy"], multi_categories[multi]])
 
 file.close()
 

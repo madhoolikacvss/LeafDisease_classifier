@@ -34,7 +34,7 @@ for param in resnet_model.parameters():
 resnet_model.fc = nn.Sequential(
     nn.Linear(2048, 128),
     nn.ReLU(inplace=True),
-    nn.Linear(128, 2)
+    nn.Linear(128, 14)
 )
 class_counts = Counter(df['multi_cat'])
 total = sum(class_counts.values())

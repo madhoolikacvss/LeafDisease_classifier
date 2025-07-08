@@ -36,7 +36,7 @@ for param in densenet_model.parameters():
 densenet_model.classifier = nn.Sequential(
     nn.Linear(1024, 128),
     nn.ReLU(inplace=True),
-    nn.Linear(128, 2)  # num classes for classification
+    nn.Linear(128, 14)  # num classes for classification
 )
 class_counts = Counter(df['multi_cat'])
 total = sum(class_counts.values())

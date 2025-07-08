@@ -4,6 +4,7 @@ import torch.nn as nn
 import torch.optim as optim
 import pandas as pd
 df = pd.read_csv('./lables.csv')
+
 from collections import Counter
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
