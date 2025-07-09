@@ -46,5 +46,7 @@ When images are normalized (pixel size kept to original):
 - plotting for multi-class
 
 
+![image](https://github.com/user-attachments/assets/728bc6d3-70f7-4f3a-8116-d39f7fc08365)
+From: Prasad et al. https://www.nature.com/articles/s41598-024-59562-x#ref-CR12
 
 
