@@ -45,8 +45,11 @@ When images are normalized (pixel size kept to original):
 - Complete multi-class training
 - plotting for multi-class
 
-
+### CNN 
 ![image](https://github.com/user-attachments/assets/728bc6d3-70f7-4f3a-8116-d39f7fc08365)
+From: Prasad et al. https://www.nature.com/articles/s41598-024-59562-x#ref-CR12
+### DCNN
+![image](https://github.com/user-attachments/assets/a288e39e-d6fb-4b0e-bc9a-1256c3c0f4f5)
 From: Prasad et al. https://www.nature.com/articles/s41598-024-59562-x#ref-CR12
 
 
