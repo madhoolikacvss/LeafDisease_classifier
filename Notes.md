@@ -52,4 +52,6 @@ From: Prasad et al. https://www.nature.com/articles/s41598-024-59562-x#ref-CR12
 ![image](https://github.com/user-attachments/assets/a288e39e-d6fb-4b0e-bc9a-1256c3c0f4f5)
 From: Prasad et al. https://www.nature.com/articles/s41598-024-59562-x#ref-CR12
 
+### Hybrid CNN model 
+- using timm instead of torchvision.models.feature_extraction package since torchvision does not have vanilla efficientnet; and timm gives me the flexibiliy to remove the classifier out of models
 
